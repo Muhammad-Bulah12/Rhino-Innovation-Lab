@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333; /* Dark Grey */
+  --font-tahoma: Tahoma, Verdana, sans-serif;
+  --primary: #000000; /* Black */
+  --secondary: #333333; /* Dark Grey */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-tahoma: var(--font-tahoma);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-tahoma);
+}
+
+@layer utilities {
+  .header-link {
+    @apply text-sm font-medium text-foreground hover:text-primary transition-colors;
+  }
+}

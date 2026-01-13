@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
           {/* Mobile Logo */}
-          <div className="md:hidden relative h-12 w-40">
+          <div className="md:hidden relative h-16 w-52">
             <Image
               src="/RhinoLab-MView-logo.png"
               alt="Rhino Innovation Lab"
@@ -30,15 +30,11 @@ export default function Header() {
             />
           </div>
 
-          {/* Desktop Logo */}
-          <div className="hidden md:block relative h-12 w-48">
-            <Image
-              src="/RhinoLab-DView-logo.png"
-              alt="Rhino Innovation Lab"
-              fill
-              className="object-contain object-left"
-              priority
-            />
+          {/* Desktop & Tablet Logo */}
+          <div className="hidden md:block">
+            <h1 className="text-2xl font-bold tracking-tight text-gray-900" style={{ fontFamily: 'Tahoma, sans-serif' }}>
+              Rhino Innovation Lab
+            </h1>
           </div>
         </Link>
 

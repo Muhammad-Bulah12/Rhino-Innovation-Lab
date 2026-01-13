@@ -47,45 +47,66 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group p-8 transition-all hover:shadow-xl border border-gray-100 rounded-2xl bg-gray-50">
-              <div className="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:bg-secondary transition-colors">
-                 💻
+            <div className="group flex flex-col h-full bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="/digital-skills-training.jpg"
+                  alt="Digital Skills Training"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-primary">Digital Skills</h3>
-              <p className="text-gray-600 mb-6 line-clamp-3">
-                Equipping youth with cutting-edge coding, data analysis, and AI skills to prepare them for the future of work.
-              </p>
-              <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1">
-                Learn more <span>→</span>
-              </Link>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold mb-3 text-primary">Digital Skills</h3>
+                <p className="text-gray-600 mb-6 flex-grow">
+                  Equipping youth with cutting-edge coding, data analysis, and AI skills to prepare them for the future of work.
+                </p>
+                <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1 mt-auto">
+                  Learn more <span>→</span>
+                </Link>
+              </div>
             </div>
 
             {/* Card 2 */}
-            <div className="group p-8 transition-all hover:shadow-xl border border-gray-100 rounded-2xl bg-gray-50">
-              <div className="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:bg-secondary transition-colors">
-                 💡
+            <div className="group flex flex-col h-full bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="/community-innovation.jpg"
+                  alt="Community Innovation"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-primary">Community Innovation</h3>
-              <p className="text-gray-600 mb-6 line-clamp-3">
-                Supporting grassroots solutions to local challenges through hackathons, incubation, and mentorship.
-              </p>
-              <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1">
-                Learn more <span>→</span>
-              </Link>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold mb-3 text-primary">Community Innovation</h3>
+                <p className="text-gray-600 mb-6 flex-grow">
+                  Supporting grassroots solutions to local challenges through hackathons, incubation, and mentorship.
+                </p>
+                <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1 mt-auto">
+                  Learn more <span>→</span>
+                </Link>
+              </div>
             </div>
 
             {/* Card 3 */}
-            <div className="group p-8 transition-all hover:shadow-xl border border-gray-100 rounded-2xl bg-gray-50">
-              <div className="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center mb-6 text-2xl group-hover:bg-secondary transition-colors">
-                 🚀
+            <div className="group flex flex-col h-full bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="/capacity-building.jpg"
+                  alt="Capacity Building"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-primary">Capacity Building</h3>
-              <p className="text-gray-600 mb-6 line-clamp-3">
-                Developing leadership and entrepreneurial talent to drive sustainable development and economic growth.
-              </p>
-              <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1">
-                Learn more <span>→</span>
-              </Link>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold mb-3 text-primary">Capacity Building</h3>
+                <p className="text-gray-600 mb-6 flex-grow">
+                  Developing leadership and entrepreneurial talent to drive sustainable development and economic growth.
+                </p>
+                <Link href="/programs" className="text-primary font-bold hover:underline inline-flex items-center gap-1 mt-auto">
+                  Learn more <span>→</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

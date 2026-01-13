@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Image from "next/image";
 
 const programs = [
   {
@@ -11,7 +12,7 @@ const programs = [
       "Mobile App Development",
       "Digital Marketing Fundamentals"
     ],
-    icon: "💻"
+    image: "/digital-skills-training.jpg"
   },
   {
     title: "Community Innovation",
@@ -22,7 +23,7 @@ const programs = [
       "Community Tech Hubs",
       "Mentorship Programs"
     ],
-    icon: "💡"
+    image: "/community-innovation.jpg"
   },
   {
     title: "Capacity Building",
@@ -33,7 +34,7 @@ const programs = [
       "Organizational Digital Transformation",
       "Soft Skills Workshops"
     ],
-    icon: "🚀"
+    image: "/capacity-building.jpg"
   }
 ];
 
@@ -58,8 +59,13 @@ export default function ProgramsPage() {
               <div key={index} className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 {/* Visual Side */}
                 <div className="w-full md:w-1/2">
-                   <div className="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center text-9xl shadow-inner">
-                      {program.icon}
+                   <div className="relative rounded-2xl aspect-video overflow-hidden shadow-lg">
+                      <Image 
+                        src={program.image} 
+                        alt={program.title}
+                        fill
+                        className="object-cover"
+                      />
                    </div>
                 </div>
 
